@@ -1,0 +1,6 @@
+[submodule "FixIt"]
+	path = FixIt
+	url = https://github.com/hugo-fixit/FixIt
+[submodule "themes/fixit"]
+	path = themes/fixit
+	url = https://github.com/hugo-fixit/FixIt

@@ -1,0 +1,4 @@
+baseURL = 'https://jasin.atipi.it/'
+languageCode = 'en-us'
+title = 'Atipi Jasin'
+theme = 'fixit'
