@@ -11,9 +11,9 @@ Suppose you have the following situation:
 
 ```mermaid
 graph TD;
-    t[Terminal 💻]-- Reachable ✅ --->s[Reachable Server];
-    s[Reachable Server 🖥️]-- Reachable ✅ --->p[Postgres];
-    t-- Not Reachable ❌ --->p[Postgres 🐘];
+    t[Terminal 💻]-- Reachable ✅ --->s[Reachable Server 🖥️];
+    s-- Reachable ✅ --->p[Postgres 🐘];
+    t-- Not Reachable ❌ --->p;
 ```
 
 You are trying to connect to a **Postgres** server but you don't have direct access to it. You do, however, have access to a server which can reach the Postgres server.
