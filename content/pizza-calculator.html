@@ -1,0 +1,79 @@
+<head>
+  <link rel="stylesheet" href="/css/pizza-calculator.css">
+  <script src="/js/pizza-calculator.js" defer></script>
+  <title>Pizza Calculator</title>
+</head>
+
+<body>
+<h1>Pizza Dough Calculator</h1>
+<h3>From <a href="/posts/pizza">this post 🍕</a></h3>
+<p>
+  I made this calculator so I can quickly use it for myself when I need it. <br>
+  ⚠️ Remember to put yeast+salt.
+</p>
+<div class="form-container">
+  <div class="form-box">
+    <h3>Total Pizzas</h3>
+    <form id="pizzas-form">
+      <label for="flour">Flour</label>
+      <div class="input-with-unit">
+        <input type="number" id="flour" placeholder="Flour">
+        <span class="unit">g</span>
+      </div>      <br>
+
+      <label for="hydration">Hydration</label>
+      <div class="input-with-unit">
+        <input type="number" id="hydration" placeholder="Hydration">
+        <span class="unit">%</span>
+      </div>      <br>
+
+      <label for="dough-weight">Desired Pizza Dough Weight:</label>
+      <div class="input-with-unit">
+        <input type="number" id="dough-weight" placeholder="Dough weight">
+        <span class="unit">g</span>
+      </div>      <br>
+
+      <button type="submit">Calculate Total Pizzas</button>
+    </form>
+
+    <span id="error-message1"></span>
+
+    <div id="results1" style="display:none;">
+      <h4>Total Pizzas:</h4>
+      <p><span id="total-pizzas"></span></p>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <h3>Calculate Flour</h3>
+    <form id="pizzas-form2">
+      <label for="desired-pizzas">Desired Pizzas</label>
+      <div class="input-with-unit">
+        <input type="number" id="desired-pizzas" placeholder="Desired Pizzas">
+        <span class="unit"></span>
+      </div><br>
+
+      <label for="hydration2">Hydration</label>
+      <div class="input-with-unit">
+        <input type="number" id="hydration2" placeholder="Hydration">
+        <span class="unit">%</span>
+      </div>      <br>
+
+      <label for="dough-weight2">Desired Pizza Dough Weight:</label>
+      <div class="input-with-unit">
+        <input type="number" id="dough-weight2" placeholder="Dough weight">
+        <span class="unit">g</span>
+      </div>      <br>
+
+      <button type="submit">Calculate total flour</button>
+    </form>
+    <span id="error-message2"></span>
+
+    <div id="results2" style="display:none;">
+      <h4>Total Flour Needed:</h4>
+      <p><span id="total-flour-needed"></span> grams of flour plus <span id="total-water-needed"></span> grams (milliliters) of water</p>
+    </div>
+  </div>
+</div>
+
+</body>

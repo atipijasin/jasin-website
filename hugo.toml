@@ -2,59 +2,74 @@ baseURL = "https://jasin.atipi.it/"
 languageCode = "en-us"
 title = "Atipi Jasin"
 theme = "fixit"
-paginate = 12
+pagination.pagerSize = 12
 copyright = ""
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 [menu]
-[[menu.main]]
-  identifier = "posts"
-  parent = ""
-  pre = ""
-  post = ""
-  name = "Posts"
-  url = "/posts/"
-  title = "Posts"
-  weight = 1
-  [menu.main.params]
+  [[menu.main]]
+    identifier = "apps"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Apps"
+    url = "/apps"
+    title = "Apps"
+    weight = 1
+    [menu.main.params]
+      class = ""
+      draft = false
+      icon = "fa-solid fa-a"
+      type = ""
+
+  [[menu.main]]
+    identifier = "posts"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    title = "Posts"
+    weight = 2
+    [menu.main.params]
     class = ""
     draft = false
-    icon = "fa-brands fa-microblog"
+    icon = "fa-solid fa-p"
     type = ""
 
 [params]
+math = true
+capitalizeTitles = false
 description = "Atipi Jasin's personal Website and Blog"
-  # Header config
   [params.header]
-    # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
     desktopMode = "sticky"
-    # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
     mobileMode = "auto"
-    # Header title config
     [params.header.title]
-      # URL of the LOGO
       logo = ""
       pre = ""
       post = ""
       typeit = false 
-    # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       name = ""
       typeit = false 
 
-  # Home page config
   [params.home]
     [params.home.profile]
       enable = true 
-      # URL of avatar shown in home page
       avatarURL = "https://avatars.githubusercontent.com/u/30267143"
-      # FixIt 0.2.17 | NEW identifier of avatar menu link
-      # title shown in home page (HTML format is supported)
       title = "Atipi Jasin"
-      subtitle = "🏓🎹👾🧗💻📚🗻"
+      subtitle = "🎾🎹🏓👾🧗💻📚🗻"
       typeit = true
       social = true
       disclaimer = "Software Engineer"
@@ -69,7 +84,6 @@ description = "Atipi Jasin's personal Website and Blog"
     duration = -1
     loop = true 
 
-
   [params.social]
     GitHub = "atipijasin"
     Linkedin = "jasinatipi"
@@ -79,86 +93,5 @@ description = "Atipi Jasin's personal Website and Blog"
     Medium = "jasin.atipi"
     Devto = "atipij"
     Email = "jasin@atipi.it"
-    RSS = false 
-    # custom social links like the following
-    # [params.social.twitter]
-    #   id = "lruihao"
-    #   weight = 3
-    #   prefix = "https://twitter.com/"
-    #   Title = "Twitter"
-    #   [social.twitter.icon]
-    #     class = "fa-brands fa-x-twitter fa-fw"
-    Gitlab = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    ORCID = ""
-    Liberapay = ""
-    Ko-Fi = ""
-    BuyMeaCoffee = ""
-    Linktree = ""
-    QQ = ""
-    QQGroup = "" # https://qun.qq.com/join.html
-    Diaspora = ""
-    CSDN = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki= ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe = ""
-    Feishu = ""
-    TryHackMe = ""
-    Douyin = ""
-    TikTok = ""
-    Phone = ""
+    Goodreads = "177467161-jasin-atipi"
+    RSS = false
