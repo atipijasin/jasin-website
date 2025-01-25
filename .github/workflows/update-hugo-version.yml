@@ -14,13 +14,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Get latest Hugo version
         id: hugo_version
         run: |
           latest_hugo_version=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | jq -r '.tag_name' | sed 's/v//')
-          echo "::set-output name=version::$latest_hugo_version"
+          echo "{version}={$latest_hugo_version}" >> $GITHUB_OUTPUT
 
       - name: Update vercel.json
         run: |
@@ -28,7 +28,7 @@ jobs:
           mv vercel.json.new vercel.json
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.PAT}}
           commit-message: "Update Hugo version to ${{ steps.hugo_version.outputs.version }}"

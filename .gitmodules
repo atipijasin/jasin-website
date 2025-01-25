@@ -1,3 +1,4 @@
 [submodule "themes/fixit"]
 	path = themes/fixit
 	url = https://github.com/hugo-fixit/FixIt
+	branch = main
