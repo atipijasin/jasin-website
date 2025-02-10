@@ -9,6 +9,8 @@ enableGitInfo = true
 enableEmoji = true
 
 [markup]
+  [markup.highlight]
+    style='xcode'
   [markup.goldmark]
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
