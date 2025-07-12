@@ -1,3 +1,8 @@
 # Jasin's static Hugo Website
-## [jasin.atipi.eu](https://jasin.atipi.eu)
+## [jasin.atipi.it](https://jasin.atipi.it)
 ![Intro](intro.gif)
+
+## Local dev
+Install hugo, then
+`hugo serve`
+```
