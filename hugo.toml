@@ -21,21 +21,6 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    identifier = "cv"
-    parent = ""
-    pre = ""
-    post = ""
-    name = "CV"
-    url = "/cv"
-    title = "Jasin Atipi CV"
-    weight = -1
-    [menu.main.params]
-      class = ""
-      draft = false
-      icon = "fa-solid fa-file"
-      type = ""
-
-  [[menu.main]]
     identifier = "apps"
     parent = ""
     pre = ""

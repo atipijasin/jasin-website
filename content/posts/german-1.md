@@ -33,18 +33,21 @@ You can see that the letter in the middle (a/u/a) changes only for the Präteri
 Other examples:
 - essen/aß/gegessen
 - fallen/fiel/gefallen
+
 and many more (just learn them, lol)
 
 ### ABB
 Following the same concept as before, here's an example:
 - bl**ei**ben/bl**ie**b/gebl**ie**ben (ei/ie/ie)
 - biegen/bog/gebogen (ie/o/o)
+
 we can spot the pattern by noticing that for the Präteritum and the Partizip II, the letters in the middle stay the same, even though it's not straightforward how to build them (bog and gebogen are wildly different even though they share the same middle o)
 ### ABC
 These are the funnier ones because they are all different:
 - f**i**nden/f**a**nd/gef**u**nden (i/a/u)
 At first I though there was a paattern of (i/a/u) always, but that's not necessarily the case, for example here's another verb:
 - gewinnen/gewann/gewonnen (i/a/o)
+
 It is different, and I feel like there's an intuition that needs to be built just by practicing, I think that there needs to be a balance between finding shortcuts and memorizing, considering the fact that if the shortcuts become too many and too complex, it's just not worth the tradeoff... it's easier to just build an intuition and learn them by heart at a certain point
 # das Ende
 This is it for now, until the next time.
