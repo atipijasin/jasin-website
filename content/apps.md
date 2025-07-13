@@ -6,3 +6,4 @@ title: "Apps"
 I love creating small apps from time to time, each designed to solve simple but useful problems.
 
 #### [Pizza Dough Calculator 🍕](/pizza-calculator)
+#### [German Tools](https://github.com/atipijasin/german-tools)
